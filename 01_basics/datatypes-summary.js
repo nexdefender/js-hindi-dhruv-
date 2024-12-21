@@ -50,4 +50,34 @@ console.log(typeof heros);//object
 
 
 
+//+++++++++++++++++++++++++++++++++++++++
 
+// Stack (Primitive) make copy, Heap(Non-Primitive) make reference
+
+// this is stack ---------//
+let myYoutubename ="dhruvbansal.com"
+
+let anothername = myYoutubename
+anothername ="chaiaurcode"
+
+console.log(myYoutubename);
+ console.log(anothername);
+
+ //in this both give different//
+// ----------//
+
+//this is heap---------------//
+let userOne ={
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "dhruv@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+//in this both give same
+//---------------//
