@@ -49,7 +49,7 @@ console.log("B ",myArr);
 
 const myn2 = myArr.splice(1,3) // inclue last range but this is not orignal diff btw slice and splice 
 
-console.log("c ",myArr);
+console.log("C ",myArr);
 console.log(myn2);
 
 //****** differnce btw slice and splice is *****//
