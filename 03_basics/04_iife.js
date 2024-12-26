@@ -3,7 +3,7 @@
 (function chai(){
     console.log(`DB CONNECTED`);
     
-})();// this semicolon imp for written two iife
+})();// this semicolon is imp, for written two iife
 
 ( () => {
     console.log(`DB CONNECTED TWO`);
