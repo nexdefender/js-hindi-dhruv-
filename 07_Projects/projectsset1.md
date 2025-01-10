@@ -35,7 +35,9 @@ buttons.forEach(function(button) {
   });
 });
 
-project 2
+```
+
+## project 2
 
 ```javascript
 const form = document.querySelector('form');
@@ -75,4 +77,16 @@ form.addEventListener('submit', function(e) {
     }
   
 }) 
+
+```
+## project 3
+
+```javascript
+clock project self
+```
+
+project 4
+
+``` javascript
+```
 
