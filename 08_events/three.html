@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async2</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Dhruv",Date.now());
+    // },2000) // in this code run infinite time 
+
+    const myFirst = function(ptr){
+        console.log(ptr,Date.now());
+        
+    }
+
+    const mySelf = function(str){
+        console.log(str,Date.now());
+    }
+
+    // const firstName = setInterval(myFirst,1000,"Dhruv")
+
+    // const intervalId = setInterval(mySelf,1000,"Bansal")
+
+    // clearInterval(intervalId)
+
+    // my Task Given byy chai aur code
+    // start and stop task
+
+    let firstName;
+    let intervalId;
+
+    const start = document.querySelector('#start').addEventListener('click',function(){
+         firstName = setInterval(myFirst,1000,"Dhruv")
+        intervalId = setInterval(mySelf,1000,"Bansal")
+        console.log("STARTED");
+    })
+
+
+    const stop = document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(firstName)
+        clearInterval(intervalId)
+        console.log("STOPPED");
+        
+    })
+    // Task complete
+    
+
+</script>
+</html>
