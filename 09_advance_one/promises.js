@@ -106,7 +106,7 @@ fetch('https://jsonplaceholder.typicode.com/users').then(function(response){
   
 }).then(function(data){
   console.log(data);
-})
+})     
 
 
 
